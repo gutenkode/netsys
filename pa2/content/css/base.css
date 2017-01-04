@@ -1,0 +1,155 @@
+html {
+	position: relative;
+	min-height: 100%; /* for sticky footer */
+}
+body {
+	/*width: 855px;*/
+	margin: auto;
+	color: #263238;
+	background-color: white;
+
+	text-align: center;
+	font-family: 'Oxygen', sans-serif;
+
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+
+	/*max-width: 900px; /* Max width of the content sections, still scales well for mobile */
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+}
+p.p-footer {
+	color: #ECEFF1;
+}
+
+iframe {
+	padding: .15cm;
+	padding-left: 0;
+	width: 100%;
+	max-width: 500px;
+}
+img {
+	padding: .15cm;
+	padding-left: 0;
+	width: 100%;
+	max-width: 500px;
+}
+img.logo {
+	padding: 0cm;
+	/*padding-top: 1.8cm;*/
+	margin: 0cm;
+	max-width: 10cm;
+}
+
+hr {
+	border: 0;
+	height: 3px;
+	background: #DADADA;
+}
+
+div {
+	font-size: 12pt;
+	font-weight: 200;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.navbar {
+	border-radius: 0;
+}
+div.header { /* logo image */
+	padding: 0;
+}
+div.tagline {
+	padding-top: .15cm;
+	font-size: 11pt;
+}
+div.content {
+	text-align: left;
+	line-height: 23px;
+
+	/* format nicely, keep lines, etc. */
+	/*
+	white-space: pre-wrap;
+	white-space: pre-line;*/
+
+	/* to line content up with the menu bar text * /
+	padding-left: 70px;
+	padding-right: 50px;*/
+}
+.panel {
+	border: 0;
+	box-shadow: none;
+}
+.panel-default>.panel-heading {
+	color: black;
+	background-color: white;
+	border-color: blue;
+	border: none;
+	padding-left: .2cm;
+	margin: 0;
+	border-radius: 0;
+}
+div.panel { /* toggleable content should start collapsed */
+	max-width: 700px;
+	border-radius: 0;
+	border-left-style: none;
+	border-width: 3px;
+	border-color: #DADADA;
+	background-color: #EAEAEA;
+	/* left side of the line */
+	/* right side of the line */
+	padding-left: .2cm;
+}
+div.footer {
+	padding-top: .25cm;
+	font-size: 10pt;
+	background-color: #293238;
+}
+div.error { /* used on the 404 error page */
+	font-weight: bolder;
+	font-size: 80pt;
+}
+
+ul {
+}
+
+ul.nav { /* nav bar list */
+	color: white;
+}
+ul.contentlist { /* a list used inside the content div */
+	/*list-style-type: none;*/
+}
+
+li {
+}
+
+a {
+	color: #d84315; /* "deep orange" */
+	text-decoration: none;
+	font-weight: bold;
+	transition: .5s background-color;
+}
+a.header:hover { /* the image link at the top */
+	background-color: white;
+}
+.panel-title>a {
+	color: #d84315;
+	text-decoration: none;
+}
+a.subtitle { /* headings for individual pages */
+	font-size: 15pt;
+}
+a:hover { /* gray box on link hover */
+	background-color: #EAEAEA;
+	color: #d84315;
+	text-decoration: none;
+}
+
+.bold { /* anything that needs to be bolded */
+	font-weight: bold;
+}

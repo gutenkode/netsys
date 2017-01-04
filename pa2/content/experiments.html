@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Gutenkode</title>
+  <meta name="description" content="">
+  <meta name="author" content="Peter Gutenko">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
+  <!-- Javascript moved to bottom of file -->
+
+  <!-- Google font -->
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS for this page -->
+  <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse"> <!-- " navbar-default" -->
+    <div class="container">
+      <div class="navbar-header">
+        <button id="menu-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span id="menu-chevron" class="glyphicon glyphicon-chevron-down" style="color:white"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home" style="color:#d84315"></span> Gutenkode</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html"><span style="color:#d84315">// </span>Home</a></li>
+<li><a href="games.html"><span style="color:#d84315">// </span>Games</a></li>
+<li><a href="projects.html"><span style="color:#d84315">// </span>Projects</a></li>
+<li class="active"><a href="experiments.html"><span style="color:#d84315">// </span>Experiments</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="aboutme.html"><span class="glyphicon glyphicon-file" style="color:#d84315"></span> About Me</a></li>
+<li><a href="contact.html"><span class="glyphicon glyphicon-envelope" style="color:#d84315"></span> Contact</a></li>
+
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="header">
+    <a class="header" href="index.html">
+      <img class="logo" src="img/gutenkode.png" alt="Gutenkode">
+    </a>
+  </div> <!-- /header -->
+
+  <div class="tagline">
+    adventures in computer graphics and design
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <div class="content">
+
+      <h1>Experiments</h1>
+
+      <p class="lead"></p>
+
+      <p></p>
+
+      <!-- Accordion -->
+<div id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="headingOne">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Perlin Noise
+      </a>
+    </h4>
+  </div>
+  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    A series of random noise functions are added together to produce a natural looking terrain.  To add to the sense of height, valleys are darkened and blurred to produce a simple ambient occlusion effect.  The gif below uses a gaussian kernel to blur the terrain.
+    <br>
+    <img src="img/perlin_1.png">
+    <img src="img/perlin_2.gif">
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="headingTwo">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Diffusion-Limited Aggregation
+      </a>
+    </h4>
+  </div>
+  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+    An structure is formed from a cloud of randomly moving particles.  When a particle touches part of the structure, it becomes part of it.  Natural “coral” columns and patterns are formed with this process, since the aggregation is limited by the diffusion of the particles.
+    <br>
+    <img src="img/dla_1.png">
+    <img src="img/dla_2.png">
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="headingThree">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Reflection Mapping
+      </a>
+    </h4>
+  </div>
+  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+    A reflection texture is mapped to the surface based on orientation and normals.
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4J5Ygi6T49w" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="headingFour">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Postprocess HDR Bloom and Reflection Mapping
+      </a>
+    </h4>
+  </div>
+  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+    Reflection mapping applied to a model instead of a surface.  HDR bloom is applied by blurring the brightest parts of the rendered image.
+    <br>
+    <img src="img/hdr_1.png">
+    <img src="img/hdr_2.gif">
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="headingFive">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Postprocess HDR Bloom, Reflection Mapping, and Shadow Mapping
+      </a>
+    </h4>
+  </div>
+  <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+    A teapot with shadow mapping, too.  Fancy!
+    <br>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/uCRMnpRYdkg" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="headingSix">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        Volumetric Rendering and Julia Set Fractal
+      </a>
+    </h4>
+  </div>
+  <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+    A slice of the Julia set fractal is calculated in OpenCL, along with an occlusion map which darkens denser areas of the generated image.  Generating the set without GPU acceleration would take tens of minutes - OpenCL calculates the set and occlusion data in seconds, then passes the data to OpenGL for rendering with a 3D texture.
+    <br>
+    <img src="img/julia_1.png">
+    <img src="img/julia_2.png">
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="headingSeven">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        Cel Shading
+      </a>
+    </h4>
+  </div>
+  <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+    A simple GLSL postprocessing effect.
+    <br>
+    <img src="img/cel_1.gif">
+  </div>
+</div>
+
+</div> <!-- /accordion -->
+
+    </div> <!-- /content -->
+
+  </div><!-- /container -->
+
+  <footer class="footer">
+    <div class="footer">
+      <p class="p-footer text-muted">
+        &copy; 2016 - Peter Gutenko<br>
+        Last updated <span id="lastUpdated"> Oct. 12, 2016 </span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/JQueryRotate.js"></script>
+  <script src='js/index.js'></script>
+</body>
+<html>
