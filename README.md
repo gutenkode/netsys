@@ -1,2 +1,2 @@
 ### Projects from Network Systems
-Class projects, written in C/C++ that use networking.
+Class projects, written in C/C++, that use networking.
